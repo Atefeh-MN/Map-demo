@@ -1,14 +1,15 @@
 import './App.css';
-import store from './Redux/store';
+import store from './redux/store';
 import { Provider } from 'react-redux'
-import FileUploadComponent from './components/FileUploadeComponent';
-import  MapContainer  from './components/MapContainer';
+import  MapContainer  from './components/mapComp/MapContainer';
+import FileUploadComponent from './components/fileUpload/FileUploadeComponent';
+
 
 function App() {
   return (
     <Provider store={store}>
     <div className="container">
-      <FileUploadComponent />
+     <FileUploadComponent/>
       <MapContainer/>
       </div>
     </Provider>

@@ -11,15 +11,6 @@ const MapComponent = () => {
   lng:51.416347,
   })
 
-
-  
-  useEffect(() => {
-    const newFile = JSON.parse(localStorage.getItem('New_file'));
-    // if (newFile) setLocation(newFile);
-    
-  }, [])
-  
-
   return ( 
     <div className='map'>
     <div style={{width:'100vw',height:'100vh'}}>

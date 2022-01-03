@@ -1,0 +1,32 @@
+.inputControl{
+	width: 0.1px;
+	height: 0.1px;
+	opacity: 0;
+	overflow: hidden;
+	position: absolute;
+	z-index: -1;
+}
+.inputControl + label {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.25em;
+    font-weight: 400;
+    padding: 10px 12px;
+    color: #7c3aed;
+    background-color:#ddd6fe;
+    display: inline-block;
+    border-radius: 5px;
+}
+.inputControl:focus + label,
+.inputControl + label:hover {
+    background-color: #7c3aed;
+    color:#ddd6fe ;
+}
+.inputControl + label {
+	cursor: pointer;
+}
+.inputControl:focus + label {
+	outline: 3px dotted #7c3aed;
+	outline: #ddd6fe auto 5px;
+}
