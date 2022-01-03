@@ -56,7 +56,7 @@ const MapContainer = () => {
           <InfoWindow
             position={{ lat: select.lat, lng: select.long }}
             clickable={true}
-            onCloseClick={() => setSelected({})}
+            onCloseClick={() => setSelected(false))}
               
           >
             <p>{select.lable}</p>
