@@ -45,6 +45,7 @@ const MapContainer = () => {
             <Marker key={item.lable}
               position={{ lat: item.lat, lng: item.long }}
               onClick={() => onSelect(item)}
+              onMouseOver={(e)=>onSelect(item)}
             >
             </Marker>
                    
