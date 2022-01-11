@@ -1,5 +1,5 @@
 import { useDispatch } from "react-redux";
-import { fetchData } from '../../redux/fileActions';
+import { fetchData } from '../../Redux/fileActions';
 import './fileUpload.css';
 import {MdOutlineFileUpload } from "react-icons/md";
 

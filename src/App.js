@@ -1,5 +1,5 @@
 import './App.css';
-import store from './redux/store';
+import store from './Redux/store';
 import { Provider } from 'react-redux'
 import  MapContainer  from './components/mapComp/MapContainer';
 import FileUploadComponent from './components/fileUpload/FileUploadeComponent';
