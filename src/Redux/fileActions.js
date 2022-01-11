@@ -41,7 +41,7 @@ export function fetchData(file) {
         });
         promise.then(data => {
             const fileData = data;
-            localStorage.setItem('fileData', JSON.stringify(data));
+            // localStorage.setItem('fileData', JSON.stringify(data));
             console.log(fileData)
             dispatch(fetchFileDataSuccess(fileData));
         })

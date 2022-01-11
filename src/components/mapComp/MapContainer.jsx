@@ -9,8 +9,14 @@ const MapContainer = () => {
  
   const filesData = useSelector((state) => state.fileData);
   useEffect(() => {
-    setLocations(filesData);    
-  }, [filesData, locations])
+    const file = JSON.parse(localStorage.getItem('fileData'));
+    if(file!==null)setLocations(file)
+
+  },[])
+  useEffect(() => {
+    setLocations(filesData);  
+    
+  }, [filesData])
    
   
   const mapStyles = {
@@ -56,8 +62,7 @@ const MapContainer = () => {
           <InfoWindow
             position={{ lat: select.lat, lng: select.long }}
             clickable={true}
-            onCloseClick={() => setSelected(false))}
-              
+            onCloseClick={() => setSelected(false)}     
           >
             <p>{select.lable}</p>
           </InfoWindow>
